@@ -1,10 +1,10 @@
 - 👋 Hi, I’m @Pankaj Kumar Ray
-- 👀 I’m interested in learning Full Stack Web Development
-- 🌱 I’m currently learning Vanila Javascript
-- 💞️ I’m looking to collaborate on Web Project
+- 👀 I’m interested in learning Full Stack Web Development and 3D Animation
+- 🌱 I’m currently learning DSA in JS and Three. JS
+- 💞️ I’m looking to collaborate on your FrontEnd Project
 - 📫 How to reach me pankajray1288@gmail.com
 - 😄 Pronouns: He
-- ⚡ Fun fact: Work Work Work !!
+
 
 <!---
 aarzooray/aarzooray is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
