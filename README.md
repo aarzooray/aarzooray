@@ -38,8 +38,8 @@ Full-Stack web developer. Building AR/VR measurement engines and interactive pla
 
 
 ### 🐍 Contribution Snake
-![GitHub Snake Light](https://github.com/aarzoo/aarzoo/blob/output/github-contribution-grid-snake.svg#gh-light-mode-only)
-![GitHub Snake Dark](https://github.com/aarzoo/aarzoo/blob/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
+![GitHub Snake Light](https://github.com/aarzooray/aarzooray/blob/output/github-contribution-grid-snake.svg#gh-light-mode-only)
+![GitHub Snake Dark](https://github.com/aarzooray/aarzooray/blob/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
 
 
 > Last updated: 2025-09-25 08:30 UTC
