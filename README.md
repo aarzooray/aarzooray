@@ -24,6 +24,7 @@ Full-Stack web developer. Building AR/VR measurement engines and interactive pla
 <img src="https://github-readme-stats.vercel.app/api?username=aarzooray&show_icons=true&theme=dark&hide_border=true" alt="github stats"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aarzooray&layout=compact&theme=dark&hide_border=true" alt="top languages"/>
 
+[![TypeScript](https://img.shields.io/badge/-TypeScript-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 [![React](https://img.shields.io/badge/-React-0ea5e9?style=flat-square&logo=react)](https://reactjs.org)
 [![Node.js](https://img.shields.io/badge/-Node.js-6b7280?style=flat-square&logo=node.js)]
 [![MongoDB](https://img.shields.io/badge/-MongoDB-10b981?style=flat-square&logo=mongodb)](https://www.mongodb.com)
