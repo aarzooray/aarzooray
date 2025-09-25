@@ -2,28 +2,48 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # daily at 00:00 UTC
-  workflow_dispatch:      # allows manual run
+    - cron: "0 0 * * *"  # daily at 00:00 UTC
+  workflow_dispatch:      # allows manual trigger
 
 permissions:
-  contents: write
+  contents: write  # allows pushing to output branch
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      # Checkout the repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Generate the contribution snake SVG
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
-          github_user_name: aarzooray
+          github_user_name: aarzoo
           outputs: dist/github-contribution-grid-snake.svg
 
+      # Ensure output branch exists
+      - name: Setup output branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin output || git checkout --orphan output
+          git checkout output || git checkout --orphan output
+          git reset --hard
+
+      # Copy generated SVG to root for publishing
+      - name: Prepare for publish
+        run: |
+          mkdir -p temp_publish
+          cp dist/github-contribution-grid-snake.svg temp_publish/
+
+      # Push to output branch using gh-pages action
       - name: Publish to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: temp_publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
