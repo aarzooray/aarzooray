@@ -1,0 +1,23 @@
+name: README daily update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # runs daily at 00:00 UTC
+  workflow_dispatch:      # allows manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update timestamp
+        run: |
+          DATE="$(date -u +"%Y-%m-%d %H:%M UTC")"
+          sed -i "s/Last updated: .*/Last updated: $DATE/" README.md
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add README.md || true
+          git commit -m "chore: README timestamp" || echo "no changes"
+          git push || echo "push failed"
