@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=700&color=00FF41&center=true&width=650&lines=%3E+whoami%20%3A%20Aarzoo;%3E%20role%20%3A%20Full-Stack%20Developer%20%7C%20Aspiring%20AR/VR%20Engineer" alt="typing">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=700&color=00FF41&center=true&width=650&lines=%3E+whoami%20%3A%Pankaj Kumar Ray;%3E%20Role%20%3A%20Full-Stack%20Developer%20%7C%20Aspiring%20AR/VR%20Engineer" alt="typing">
 </p>
 
 ### 🔧 Featured
